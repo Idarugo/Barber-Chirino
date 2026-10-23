@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barber Chirino · Rancagua</title>
+  <meta name="description" content="Barber Chirino — corte, degradado y estilo en Rancagua, Chile. La historia de un barbero en proceso. Agenda tu hora por WhatsApp.">
+  <meta name="theme-color" content="#0a0907">
+  <meta property="og:title" content="Barber Chirino · Rancagua">
+  <meta property="og:description" content="Corte · Degradado · Estilo. Agenda tu hora por WhatsApp.">
+  <meta property="og:image" content="assets/img/corte-07.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0907'/%3E%3Cpath d='M10 46 14 20l10 11 8-17 8 17 10-11 4 26z' fill='%23d4a843'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="crown" viewBox="0 0 64 44"><path d="M5 38 9 9l12 13L32 2l11 20L55 9l4 29z" fill="currentColor"/><rect x="5" y="39" width="54" height="5" rx="1.5" fill="currentColor"/></symbol>
+      <symbol id="scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></g></symbol>
+      <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></symbol>
+      <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></g></symbol>
+      <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <svg class="loader__crown"><use href="#crown"/></svg>
+    <p class="loader__label">Afilando las tijeras</p>
+    <p class="loader__count"><span>0</span>%</p>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="Barber Chirino, inicio">
+      <svg><use href="#crown"/></svg><span>Barber <b>Chirino</b></span>
+    </a>
+    <nav class="nav__links" aria-label="Secciones">
+      <a href="#historia">Historia</a>
+      <a href="#cortes">Cortes</a>
+      <a href="#servicios">Servicios</a>
+    </nav>
+    <a href="#agenda" class="btn btn--gold btn--sm">Agenda tu hora</a>
+  </header>
+
+  <!-- Barber pole scroll progress -->
+  <div class="pole" aria-hidden="true">
+    <span class="pole__cap"></span>
+    <div class="pole__glass"><div class="pole__stripes"></div></div>
+    <span class="pole__cap"></span>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__stage">
+        <div class="hero__floats" aria-hidden="true">
+          <img class="float float--1" src="assets/img/corte-08.webp" alt="">
+          <img class="float float--2" src="assets/img/corte-06.webp" alt="">
+          <img class="float float--3" src="assets/img/corte-09.webp" alt="">
+        </div>
+        <div class="hero__content">
+          <svg class="hero__crown"><use href="#crown"/></svg>
+          <p class="eyebrow hero__eyebrow">Rancagua · Chile</p>
+          <h1 class="hero__title">
+            <span class="hero__barber split">Barber</span>
+            <span class="hero__chirino split gold-text">Chirino</span>
+          </h1>
+          <p class="hero__tag">
+            <span>Corte</span><svg><use href="#scissors"/></svg><span>Degradado</span><svg><use href="#scissors"/></svg><span>Estilo</span>
+          </p>
+        </div>
+        <div class="hero__cue"><span>Desliza — esta es la historia</span><i></i></div>
+
+        <div class="hero__reveal">
+          <img src="assets/img/corte-10.webp" alt="Degradado alto hecho por Barber Chirino, vista de perfil">
+          <div class="hero__reveal-text">
+            <p class="eyebrow">Capítulo 00</p>
+            <p class="hero__reveal-line">Todo empezó con <span class="brush gold-text">un video.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="historia">
+      <header class="section-head container" data-reveal>
+        <p class="eyebrow">Capítulo 01</p>
+        <h2 class="h2">El <span class="brush gold-text">proceso</span></h2>
+        <p class="lead">Cada corte es un paso más. Así se ve aprender a la vista de todos.</p>
+      </header>
+
+      <div class="story__grid container">
+        <div class="story__media">
+          <div class="story__frame">
+            <img class="is-active" src="assets/img/corte-01.webp" alt="Primer corte: degradado hecho solo viendo videos">
+            <img src="assets/img/corte-02.webp" alt="Segundo corte, hecho con ayuda">
+            <img src="assets/img/corte-04.webp" alt="Cuarto corte, degradado más limpio">
+            <img src="assets/img/corte-05.webp" alt="Fade en patilla">
+            <img src="assets/img/corte-11.webp" alt="Corte reciente con degradado limpio">
+            <div class="story__badge"><span class="story__badge-k">Corte</span><span class="story__badge-n">#01</span></div>
+            <div class="story__meter">
+              <span>Nivel de pulso</span>
+              <div class="story__bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story__steps">
+          <article class="step" data-level="18">
+            <span class="step__k">Corte #01</span>
+            <h3 class="step__t">Solo viendo videos.</h3>
+            <p>Sin academia y sin maestro: solo un celular, un tutorial y muchas ganas. Así empezó todo.</p>
+            <blockquote>“Primer corte solo viendo videos 🍀”</blockquote>
+          </article>
+          <article class="step" data-level="36">
+            <span class="step__k">Corte #02</span>
+            <h3 class="step__t">Con una mano de ayuda.</h3>
+            <p>Aprender también es dejarse guiar. Con cada pasada de máquina gana más seguridad.</p>
+            <blockquote>“Segundo corte con ayuda 🍀”</blockquote>
+          </article>
+          <article class="step" data-level="58">
+            <span class="step__k">Corte #04</span>
+            <h3 class="step__t">Ya sin miedo.</h3>
+            <p>Las líneas se limpian y el degradado empieza a fundirse. El pulso se afirma.</p>
+            <blockquote>“Cuarto corte 🍀”</blockquote>
+          </article>
+          <article class="step" data-level="78">
+            <span class="step__k">El detalle</span>
+            <h3 class="step__t">Fade en patilla.</h3>
+            <p>El degradado baja hasta la patilla, y es ahí donde se nota la mano.</p>
+            <blockquote>“Fade en patilla 🍀”</blockquote>
+          </article>
+          <article class="step" data-level="96">
+            <span class="step__k">Hoy</span>
+            <h3 class="step__t">Degradados limpios.</h3>
+            <p>Corte tras corte, el proceso se nota. Y esto recién empieza.</p>
+            <a href="#agenda" class="btn btn--gold">Quiero el mío</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement container">
+      <p class="eyebrow" data-reveal>Capítulo 02</p>
+      <p class="statement__text scrub">
+        Tiene <em>12 años.</em> Aprendió viendo videos. Hoy corta, degrada y perfila con el pulso de alguien que <em>no piensa detenerse.</em> Esto no es un hobby: <em>es un proceso.</em>
+      </p>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__row">
+        <span>Corte</span><svg><use href="#scissors"/></svg><span class="brush">Degradado</span><svg><use href="#scissors"/></svg><span>Estilo</span><svg><use href="#crown"/></svg>
+        <span>Corte</span><svg><use href="#scissors"/></svg><span class="brush">Degradado</span><svg><use href="#scissors"/></svg><span>Estilo</span><svg><use href="#crown"/></svg>
+        <span>Corte</span><svg><use href="#scissors"/></svg><span class="brush">Degradado</span><svg><use href="#scissors"/></svg><span>Estilo</span><svg><use href="#crown"/></svg>
+      </div>
+    </div>
+
+    <!-- GALLERY (horizontal) -->
+    <section class="gallery" id="cortes">
+      <div class="gallery__pin">
+        <header class="gallery__head container">
+          <div>
+            <p class="eyebrow">Capítulo 03</p>
+            <h2 class="h2">Los <span class="brush gold-text">cortes</span></h2>
+          </div>
+          <div class="gallery__progress" aria-hidden="true"><i></i></div>
+        </header>
+        <div class="gallery__viewport">
+          <ul class="gallery__track">
+            <li class="shot"><figure><div class="shot__img"><img src="assets/img/corte-07.webp" alt="Degradado con textura arriba" loading="lazy"></div><figcaption><span>01</span>“🔥” <small>#barberia #proceso</small></figcaption></figure></li>
+            <li class="shot"><figure><div class="shot__img"><img src="assets/img/corte-11.webp" alt="Degradado bajo con flequillo" loading="lazy"></div><figcaption><span>02</span>“🔥” <small>#barbería</small></figcaption></figure></li>
+            <li class="shot"><figure><div class="shot__img"><img src="assets/img/corte-09.webp" alt="Corte de perfil con degradado" loading="lazy"></div><figcaption><span>03</span>“Cortesito para el más crack 😍”</figcaption></figure></li>
+            <li class="shot"><figure><div class="shot__img"><img src="assets/img/corte-06.webp" alt="Degradado alto con volumen arriba" loading="lazy"></div><figcaption><span>04</span>“🔥💈” <small>#barbería</small></figcaption></figure></li>
+            <li class="shot"><figure><div class="shot__img"><img src="assets/img/corte-08.webp" alt="Degradado medio de espalda" loading="lazy"></div><figcaption><span>05</span>“Otro cortesito más 🔥”</figcaption></figure></li>
+            <li class="shot"><figure><div class="shot__img"><img src="assets/img/corte-10.webp" alt="Degradado con sombra limpia" loading="lazy"></div><figcaption><span>06</span>“🔥” <small>#barberlife</small></figcaption></figure></li>
+            <li class="shot"><figure><div class="shot__img"><img src="assets/img/corte-04.webp" alt="Degradado con diseño en la nuca" loading="lazy"></div><figcaption><span>07</span>“Cuarto corte 🍀”</figcaption></figure></li>
+            <li class="shot shot--cta">
+              <a href="https://www.instagram.com/barber.chirino/" target="_blank" rel="noopener">
+                <svg><use href="#ig"/></svg>
+                <span class="shot__cta-k">Ve todos los cortes en</span>
+                <span class="shot__cta-t brush gold-text">@barber.chirino</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANATOMY -->
+    <section class="anatomy" id="degradado">
+      <div class="anatomy__pin container">
+        <div class="anatomy__copy">
+          <p class="eyebrow">Capítulo 04</p>
+          <h2 class="h2">Anatomía de un <span class="brush gold-text">degradado</span></h2>
+          <ol class="anatomy__levels">
+            <li><b>0</b><div><strong>Al ras</strong><span>La máquina toca piel. Aquí nace el fade.</span></div></li>
+            <li><b>0.5</b><div><strong>La transición</strong><span>Comienza la sombra. Sin líneas marcadas.</span></div></li>
+            <li><b>1</b><div><strong>La sombra</strong><span>El tono se va oscureciendo de a poco.</span></div></li>
+            <li><b>2</b><div><strong>El blend</strong><span>Todo se funde. Aquí se ve la mano.</span></div></li>
+            <li><b>3+</b><div><strong>El volumen</strong><span>Tijera o máquina arriba para darle estilo.</span></div></li>
+          </ol>
+        </div>
+        <div class="anatomy__visual">
+          <div class="anatomy__photo">
+            <img src="assets/img/corte-07.webp" alt="Detalle de un degradado de espalda" loading="lazy">
+            <img class="anatomy__color" src="assets/img/corte-07.webp" alt="" loading="lazy">
+            <div class="anatomy__line"><span class="anatomy__clip"><svg><use href="#scissors"/></svg></span></div>
+          </div>
+          <div class="anatomy__scale" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="servicios">
+      <header class="section-head container" data-reveal>
+        <p class="eyebrow">Capítulo 05</p>
+        <h2 class="h2">Lo que <span class="brush gold-text">hacemos</span></h2>
+        <p class="lead">Tu estilo, en un solo lugar.</p>
+      </header>
+      <div class="services__stack container">
+        <article class="svc">
+          <span class="svc__n">01</span>
+          <div class="svc__body"><h3>Corte de pelo</h3><p>Tijera y máquina a tu medida. Dime cómo lo quieres y lo hacemos.</p></div>
+          <img src="assets/img/corte-02.webp" alt="" loading="lazy">
+        </article>
+        <article class="svc">
+          <span class="svc__n">02</span>
+          <div class="svc__body"><h3>Degradado</h3><p>Bajo, medio, alto o en patilla, con transiciones limpias que se funden.</p></div>
+          <img src="assets/img/corte-06.webp" alt="" loading="lazy">
+        </article>
+        <article class="svc">
+          <span class="svc__n">03</span>
+          <div class="svc__body"><h3>Diseño</h3><p>Líneas y detalles para darle una firma a tu corte.</p></div>
+          <img src="assets/img/corte-04.webp" alt="" loading="lazy">
+        </article>
+        <article class="svc svc--combo">
+          <span class="svc__n">04</span>
+          <div class="svc__body">
+            <p class="svc__tag">Super combo</p>
+            <h3>Corte + Diseño + Perfilado de ceja y barba</h3>
+            <p>El paquete completo. Pregunta por el valor del día por WhatsApp.</p>
+            <a href="#agenda" class="btn btn--gold">Agendar combo</a>
+          </div>
+          <img src="assets/img/corte-09.webp" alt="" loading="lazy">
+        </article>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats container">
+      <div class="stat"><b data-count="181">0</b><span>seguidores en IG</span></div>
+      <div class="stat"><b data-count="13">0</b><span>publicaciones</span></div>
+      <div class="stat"><b data-count="12">0</b><span>años de edad</span></div>
+      <div class="stat"><b>∞</b><span>ganas de aprender</span></div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking" id="agenda">
+      <div class="container booking__grid">
+        <div class="booking__intro" data-reveal>
+          <p class="eyebrow">Capítulo final</p>
+          <h2 class="h2">Agenda <span class="brush gold-text">tu hora</span></h2>
+          <p class="lead">Elige lo que quieres y el horario que te acomoda. Te llevamos directo a WhatsApp con el mensaje listo, y ahí confirmamos la disponibilidad.</p>
+          <div class="booking__links">
+            <a class="contact" href="tel:+56990106565"><svg><use href="#phone"/></svg><span><small>Teléfono</small>+56 9 9010 6565</span></a>
+            <a class="contact" href="https://www.instagram.com/barber.chirino/" target="_blank" rel="noopener"><svg><use href="#ig"/></svg><span><small>Instagram</small>@barber.chirino</span></a>
+          </div>
+        </div>
+
+        <form class="ticket" id="booking" novalidate>
+          <div class="ticket__top">
+            <svg class="ticket__crown"><use href="#crown"/></svg>
+            <div><p class="ticket__brand">Barber <span class="brush gold-text">Chirino</span></p><p class="ticket__sub">Ticket de reserva</p></div>
+          </div>
+
+          <label class="field">
+            <span>Tu nombre</span>
+            <input type="text" name="nombre" autocomplete="given-name" placeholder="¿Cómo te llamas?" required>
+          </label>
+
+          <fieldset class="field">
+            <legend>Servicio</legend>
+            <div class="chips">
+              <label><input type="radio" name="servicio" value="Corte de pelo" required><span>Corte</span></label>
+              <label><input type="radio" name="servicio" value="Degradado"><span>Degradado</span></label>
+              <label><input type="radio" name="servicio" value="Corte + Diseño"><span>Corte + Diseño</span></label>
+              <label><input type="radio" name="servicio" value="Perfilado de ceja y barba"><span>Ceja y barba</span></label>
+              <label><input type="radio" name="servicio" value="Super combo"><span>Super combo</span></label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            <span>Día</span>
+            <input type="date" name="dia" required>
+          </label>
+
+          <fieldset class="field">
+            <legend>Hora preferida</legend>
+            <div class="chips chips--time">
+              <label><input type="radio" name="hora" value="10:00" required><span>10:00</span></label>
+              <label><input type="radio" name="hora" value="11:00"><span>11:00</span></label>
+              <label><input type="radio" name="hora" value="12:00"><span>12:00</span></label>
+              <label><input type="radio" name="hora" value="15:00"><span>15:00</span></label>
+              <label><input type="radio" name="hora" value="16:00"><span>16:00</span></label>
+              <label><input type="radio" name="hora" value="17:00"><span>17:00</span></label>
+              <label><input type="radio" name="hora" value="18:00"><span>18:00</span></label>
+              <label><input type="radio" name="hora" value="19:00"><span>19:00</span></label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            <span>Comentario <small>(opcional)</small></span>
+            <textarea name="nota" rows="2" placeholder="Ej: degradado bajo, con raya al lado"></textarea>
+          </label>
+
+          <div class="ticket__tear" aria-hidden="true"></div>
+
+          <div class="ticket__summary" aria-live="polite">
+            <p><span>Para</span><b data-out="nombre">—</b></p>
+            <p><span>Servicio</span><b data-out="servicio">—</b></p>
+            <p><span>Cuándo</span><b data-out="cuando">—</b></p>
+          </div>
+
+          <p class="ticket__error" role="alert"></p>
+          <button type="submit" class="btn btn--wa"><svg><use href="#wa"/></svg>Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__big"><span>Barber</span> <span class="brush gold-text">Chirino</span></p>
+      <div class="footer__row">
+        <p>💈 Barbero en proceso · Rancagua, Chile</p>
+        <p class="footer__links">
+          <a href="https://www.instagram.com/barber.chirino/" target="_blank" rel="noopener">Instagram</a>
+          <a href="tel:+56990106565">+56 9 9010 6565</a>
+          <a href="#top">Volver arriba ↑</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
