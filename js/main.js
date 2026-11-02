@@ -240,6 +240,12 @@
     });
   });
 
+  /* ---------- crew: polaroids drop onto the table ---------- */
+  gsap.from('.polaroid', {
+    y: -160, opacity: 0, rotate: (i) => [-30, 18, 32][i], stagger: 0.15, duration: 1.2, ease: 'back.out(1.4)',
+    scrollTrigger: { trigger: '.crew__photos', start: 'top 75%' },
+  });
+
   setupCounters(false);
   setupBooking();
 
@@ -250,6 +256,16 @@
   });
 
   addEventListener('load', () => ScrollTrigger.refresh());
+
+  // lazy images can shift the layout after load, so recompute pin positions when they arrive
+  let refreshTimer;
+  $$('img').forEach((img) => {
+    if (img.complete) return;
+    img.addEventListener('load', () => {
+      clearTimeout(refreshTimer);
+      refreshTimer = setTimeout(() => ScrollTrigger.refresh(), 200);
+    }, { once: true });
+  });
 
   /* =======================================================
      sections shared by full and reduced-motion modes
